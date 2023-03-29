@@ -1,0 +1,73 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.tablo {
+  font-size: 25px;
+  cursor: default;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.score1 {
+  font-size: 25px;
+  color: blue;
+}
+
+.score2 {
+  font-size: 25px;
+  color: red;
+}
+
+button {
+  margin-top: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .2);
+}
+button:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .1);
+}
+.winnerID {
+  margin-top: 20px;
+  font-size: 45px;
+  color: red;
+  height: 50px;
+  text-shadow:  0px 2px 5px rgba(0, 0, 255, .5);
+}
+
+.field {
+  margin-top: 50px;
+  display: grid;
+  max-width: 300px;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  grid-gap: 1px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 255, .1);
+}
+
+.field-cell {
+  width: 100px;
+  height: 100px;
+  border: 1px;
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.field-cell:hover {
+  transform: scale(0.93);
+}
