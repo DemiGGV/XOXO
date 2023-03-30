@@ -17,12 +17,12 @@ const playerOCount = document.querySelector(".score2");
 const winnerEl = document.querySelector(".winnerID");
 const historyX = [];
 const historyO = [];
-const fieldMarkup = createImageGallery();
+const fieldMarkup = createGameField();
 const cross = "<img src='./img/cross.png' class='cross'></img>";
 const okay = "<img src='./img/ok.png' class='ok'></img>";
 let player = true;
 
-function createImageGallery() {
+function createGameField() {
   let markup = "";
   for (let i = 1; i <= 9; i++) {
     markup += `<div class="field-cell" data-fill data-id="${i}"></div>`;
